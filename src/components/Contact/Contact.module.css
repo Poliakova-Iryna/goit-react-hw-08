@@ -1,0 +1,33 @@
+.item {
+    display: flex;
+    flex-direction: row;
+    width: 250px;
+    border: 2px solid black;
+    border-radius: 8px;
+    padding: 10px;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.container {
+    display: flex;
+    gap: 8px;
+    flex-direction: column;
+}
+
+.name {
+    font-weight: 500;
+    font-size: 16px;
+    color: black;
+}
+
+.number {
+    font-weight: 500;
+    font-size: 16px;
+    color: black;
+}
+
+.button {
+   height: 32px;
+   width: 80px;
+}

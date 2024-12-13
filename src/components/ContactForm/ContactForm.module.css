@@ -1,0 +1,38 @@
+.wrapper{
+    height: 300px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 2px solid black;
+    border-radius: 8px;
+    width: 250px;    
+}
+.error{
+    color:red;
+    font-size: 12px;
+  
+}
+.form{
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+    gap:10px;
+    & button{
+      padding: 8px 8px;
+      border-radius: 8px;
+      border: 1px solid black;
+    }
+  
+}
+.label{
+    gap:5px;
+    display: flex;
+    flex-direction: column;
+    & span {
+      font-weight: bold;
+    }
+}
+.input{
+    border-radius: 8px;
+    padding: 10px;
+}
