@@ -11,14 +11,14 @@ createRoot(document.getElementById('root')).render(
   <Provider store={store}>
     <BrowserRouter>
       <PersistGate loading={null} persistor={persistor}>
-       <App />
-       <Toaster
-        position='top-right'
-        reverseOrder={false}
-        toastOptions={{
+         <App />
+         <Toaster
+          position='top-right'
+          reverseOrder={false}
+          toastOptions={{
           duration: 2000,
-        }}
-        />
+          }}
+          />
       </PersistGate>
     </BrowserRouter>
   </Provider>
