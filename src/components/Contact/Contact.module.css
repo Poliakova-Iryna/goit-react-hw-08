@@ -4,7 +4,7 @@
     width: calc(25% - 10px); 
     border-radius: 8px;
     padding: 10px;
-    justify-content: space-evenly;
+    justify-content: space-between;
     align-items: center;
     border: 1px solid #00CED1;
     box-shadow: 2px 2px 2px 2px rgb(175, 173, 173);
