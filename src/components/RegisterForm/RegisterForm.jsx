@@ -28,13 +28,13 @@ const RegisterForm = () => {
 
     return (
         <div className={s.wrapper}>
-            <h2>Register</h2>
+            <h2 className={s.title}>Register</h2>
             <Formik onSubmit={handleSubmit} initialValues={initialValues}>
                 <Form className={s.form}>
                  <Field name='name' placeholder='Enter name' />
                  <Field name='email' placeholder='Enter email' />
                  <Field name='password' type='password' placeholder='Enter pass' />
-                 <button type='submit'>Submit</button>
+                 <button type='submit' className={s.button}>Submit</button>
                 </Form>
             </Formik>
         </div>

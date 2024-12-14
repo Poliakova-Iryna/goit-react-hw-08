@@ -1,8 +1,15 @@
+.wrapper {
+    margin-bottom: 20px;
+}
+
 .label {
     display: flex;
     flex-direction: column;
 }
 
-.input {
+.input{
     width: 250px;
+    border-radius: 8px;
+    padding: 10px;
+    border: 1px solid #00CED1;
 }

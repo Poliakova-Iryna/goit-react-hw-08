@@ -1,0 +1,19 @@
+.wrapper {
+    display: flex;
+    flex-direction: row;
+    gap: 12px;
+    align-items: center;
+}
+
+.link{
+    font-weight: bold;
+    color:white;
+    font-size: 1.4rem;
+    text-decoration: none;
+}
+
+.active{
+    text-decoration: underline;
+    color:#696969;
+    
+}

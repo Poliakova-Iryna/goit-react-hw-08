@@ -7,6 +7,8 @@
     padding: 10px;
     justify-content: space-between;
     align-items: center;
+    border: 1px solid #00CED1;
+    box-shadow: 2px 2px 2px 2px rgb(175, 173, 173);
 }
 
 .container {
@@ -19,15 +21,27 @@
     font-weight: 500;
     font-size: 16px;
     color: black;
+    margin-left: 4px;
 }
 
 .number {
     font-weight: 500;
     font-size: 16px;
     color: black;
+    margin-left: 4px;
 }
 
 .button {
    height: 32px;
    width: 80px;
+   border-radius: 50px;
+   color: white;
+   background-color: #00CED1;
+   border: none;
+   cursor: pointer;
+}
+
+.button:focus,
+.button:hover {
+  background-color: #008080;
 }

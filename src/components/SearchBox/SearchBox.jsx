@@ -7,7 +7,7 @@ export const SearchBox = () => {
 
 
     return (
-        <div>
+        <div className={s.wrapper}>
             <label className={s.label}>
                 <span className={s.span}>Find contacts by name</span>
                 <input className={s.input}
