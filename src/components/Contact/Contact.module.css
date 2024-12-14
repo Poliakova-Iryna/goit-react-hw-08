@@ -1,14 +1,14 @@
 .item {
     display: flex;
     flex-direction: row;
-    width: 250px;
-    border: 2px solid black;
+    width: calc(25% - 10px); 
     border-radius: 8px;
     padding: 10px;
-    justify-content: space-between;
+    justify-content: space-evenly;
     align-items: center;
     border: 1px solid #00CED1;
     box-shadow: 2px 2px 2px 2px rgb(175, 173, 173);
+    margin-bottom: 20px; 
 }
 
 .container {
