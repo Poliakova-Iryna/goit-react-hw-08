@@ -1,11 +1,12 @@
 import { FaPhone } from "react-icons/fa6";
 import { IoPerson } from "react-icons/io5";
-import { useDispatch } from "react-redux";
 import s from './Contact.module.css';
-import deleteContact from '../../redux/contacts/operations';
+import { useDispatch } from "react-redux";
+import {deleteContact} from '../../redux/contacts/operations';
 
 const Contact = ({ id, name, number }) => {
   const dispatch = useDispatch();
+
 
   return (
     <li className={s.item}>

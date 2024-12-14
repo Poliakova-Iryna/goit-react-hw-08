@@ -2,11 +2,21 @@ import { Field, Form, Formik } from "formik";
 import s from './RegisterForm.module.css'
 import { useDispatch } from "react-redux";
 import { register } from "../../redux/auth/operations";
+import { useNavigate } from "react-router-dom";
+import toast from "react-hot-toast";
 
 const RegisterForm = () => {
     const dispatch = useDispatch();
+    const navigate = useNavigate();
     const handleSubmit = (values, options) => {
-        dispatch(register(values));
+        dispatch(register(values))
+        .unwrap()
+        .then(res => {
+            toast(`Welcome, ${res.user.name}`);
+            navigate('/contacts')
+        }). catch (() => {
+            toast.error('An account with that name or email already exists!')
+        });
         options.resetForm();
     };
 
